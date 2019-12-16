@@ -1,6 +1,6 @@
-package com.siha80.kotlin.study.kotlinexam.route
+package com.siha80.kotlin.study.kotlinexam.helloworld.route
 
-import com.siha80.kotlin.study.kotlinexam.routehandler.HelloWorldRouteHandler
+import com.siha80.kotlin.study.kotlinexam.helloworld.routehandler.HelloWorldRouteHandler
 import org.springframework.web.reactive.function.server.RouterFunction
 import org.springframework.web.reactive.function.server.ServerResponse
 import org.springframework.web.reactive.function.server.router
