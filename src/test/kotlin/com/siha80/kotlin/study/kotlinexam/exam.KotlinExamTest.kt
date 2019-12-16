@@ -36,6 +36,10 @@ fun divide(number: Int, divider: Int): Either<Throwable, Int> {
     } else {
         return Right(number / divider)
     }
+    
+    val func = {i: Int -> i.toString()}
+    
+    val res = func(10)
 }
 
 fun getValue(number: Int, logger: Logger): String {
