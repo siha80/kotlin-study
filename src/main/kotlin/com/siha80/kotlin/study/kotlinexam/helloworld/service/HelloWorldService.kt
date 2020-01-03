@@ -4,5 +4,8 @@ import org.springframework.stereotype.Service
 
 @Service
 class HelloWorldService {
-    fun helloWorld() = "hello, world"
+    fun helloWorld(): String {
+        Thread.sleep(1000L)
+        return "hello, world"
+    }
 }

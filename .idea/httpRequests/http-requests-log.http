@@ -1,3 +1,172 @@
+POST http://localhost:8080/test/helloworld
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test"
+}
+
+<> 2020-01-03T051217.200.txt
+
+###
+
+POST http://localhost:8080/test/helloworld
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test"
+}
+
+<> 2020-01-03T050912.500.json
+
+###
+
+POST http://localhost:8080/test/helloworld
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test"
+}
+
+<> 2020-01-03T050816.200.txt
+
+###
+
+POST http://localhost:8080/test/helloworld
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test"
+}
+
+<> 2020-01-03T050803.200.txt
+
+###
+
+POST http://localhost:8080/test/helloworld
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test"
+}
+
+<> 2020-01-03T050749.200.txt
+
+###
+
+POST http://localhost:8080/test/helloworld
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test"
+}
+
+<> 2020-01-02T081524.500.json
+
+###
+
+POST http://localhost:8080/test/helloworld
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test"
+}
+
+<> 2020-01-02T081506.500.json
+
+###
+
+POST http://localhost:8080/test/helloworld
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test"
+}
+
+<> 2020-01-02T080714.500.json
+
+###
+
+POST http://localhost:8080/test/helloworld
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test"
+}
+
+<> 2020-01-02T080659.200.txt
+
+###
+
+POST http://localhost:8080/test/helloworld
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "test"
+}
+
+<> 2020-01-02T080156.200.txt
+
+###
+
+GET http://localhost:8080/test/helloworld
+Accept: application/json
+
+<> 2020-01-02T080123.200.txt
+
+###
+
+GET http://localhost:8080/test/helloworld
+Accept: application/json
+
+<> 2020-01-02T074807.200.txt
+
+###
+
+GET http://localhost:8080/test/helloworld
+Accept: application/json
+
+<> 2020-01-02T074609.200.txt
+
+###
+
+GET http://localhost:8080/test/helloworld
+Accept: application/json
+
+<> 2020-01-02T045113.200.txt
+
+###
+
+GET http://localhost:8080/test/helloworld
+Accept: application/json
+
+<> 2020-01-02T042236.200.txt
+
+###
+
+GET http://localhost:8080/test/helloworld
+Accept: application/json
+
+<> 2020-01-02T042051.200.txt
+
+###
+
+GET http://localhost:8080/test/helloworld
+Accept: application/json
+
+<> 2020-01-02T042004.200.txt
+
+###
+
 GET http://localhost:8080/test/helloworld
 Accept: application/json
 

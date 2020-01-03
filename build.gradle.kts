@@ -39,7 +39,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8")
     implementation("org.springframework.session:spring-session-core")
-
+    implementation("org.springframework.boot:spring-boot-starter-aop")
+    
     compile ("io.arrow-kt:arrow-core:$arrow_version")
     compile ("io.arrow-kt:arrow-syntax:$arrow_version")
     compile ("io.arrow-kt:arrow-typeclasses:0.9.0")

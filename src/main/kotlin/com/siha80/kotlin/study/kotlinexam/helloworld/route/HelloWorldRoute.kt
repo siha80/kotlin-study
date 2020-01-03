@@ -8,5 +8,6 @@ import org.springframework.web.reactive.function.server.router
 fun helloWorldRoute(handler: HelloWorldRouteHandler): RouterFunction<ServerResponse> {
     return router {
         GET("/test/helloworld", handler::helloWorld)
+        POST("/test/helloworld", handler::postHelloWorld)
     }
 }
