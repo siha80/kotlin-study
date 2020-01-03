@@ -3,6 +3,7 @@ package com.siha80.kotlin.study.helloworld.routehandler
 import com.siha80.kotlin.study.annotation.AopLogging
 import com.siha80.kotlin.study.helloworld.event.HelloWorldPostRequest
 import com.siha80.kotlin.study.helloworld.service.HelloWorldService
+import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Component
 import org.springframework.web.reactive.function.BodyInserters
 import org.springframework.web.reactive.function.server.ServerRequest
@@ -14,8 +15,14 @@ import reactor.core.publisher.Mono
 class HelloWorldRouteHandler (
         private val helloWorldService: HelloWorldService
 ) {
+    private val LOGGER = LoggerFactory.getLogger(javaClass.simpleName)
+
     fun helloWorld(req: ServerRequest): Mono<ServerResponse> {
-        return ServerResponse.ok().body(BodyInserters.fromValue(helloWorldService.helloWorld())).log()
+        return helloWorldService.helloWorld()
+                .flatMap {
+                    LOGGER.info("helloworld processed")
+                    ServerResponse.ok().body(BodyInserters.fromValue(it))
+                }
     }
 
     fun postHelloWorld(req: ServerRequest): Mono<ServerResponse> {

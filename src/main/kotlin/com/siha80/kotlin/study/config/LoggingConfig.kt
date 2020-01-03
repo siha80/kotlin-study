@@ -14,7 +14,8 @@ import reactor.core.publisher.Mono
 class LoggingConfig {
     private val LOGGER = LoggerFactory.getLogger(this.javaClass.simpleName)
 
-    @Pointcut("within(@com.siha80.kotlin.study.annotation.AopLogging *) "
+    @Pointcut("within(@com.siha80.kotlin.study.annotation.AopLogging *) " +
+            "|| @annotation(com.siha80.kotlin.study.annotation.AopLogging) "
     )
     fun aopLoggingPointCut() {
 
