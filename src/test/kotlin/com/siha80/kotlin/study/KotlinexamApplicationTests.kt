@@ -1,4 +1,4 @@
-package com.siha80.kotlin.study.kotlinexam
+package com.siha80.kotlin.study
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

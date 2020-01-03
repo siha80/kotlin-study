@@ -1,4 +1,4 @@
-package com.siha80.kotlin.study.kotlinexam.util
+package com.siha80.kotlin.study.util
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import kotlinx.coroutines.future.await

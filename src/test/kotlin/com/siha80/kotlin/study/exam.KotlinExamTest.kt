@@ -1,9 +1,8 @@
-package com.siha80.kotlin.study.kotlinexam
+package com.siha80.kotlin.study
 
 import arrow.core.Either
 import arrow.core.Left
 import arrow.core.Right
-import com.siha80.kotlin.study.kotlinexam.adt.OptionAdt
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
@@ -23,19 +22,6 @@ class KotlinExamTest {
     fun printEitherRight() {
         println(divide(10, 3))
     }
-
-    @Test
-    fun optionAdt() {
-        val optionAdt = OptionAdt.apply("test")
-
-        val result = when(optionAdt) {
-            is OptionAdt.Some -> "some"
-            else -> "none"
-        }
-
-        println("RESULT: $result")
-    }
-
 
     @Test
     fun test_currying() {

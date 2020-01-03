@@ -1,4 +1,4 @@
-package com.siha80.kotlin.study.kotlinexam
+package com.siha80.kotlin.study
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
