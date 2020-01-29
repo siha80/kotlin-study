@@ -24,13 +24,14 @@ repositories {
     jcenter()
     mavenCentral()
 
+    maven { url = uri("https://repo.spring.io/milestone") }
     maven { url = uri("https://jitpack.io") }
     maven { url = uri("https://dl.bintray.com/spekframework/spek-dev") }
     maven { url = uri("https://dl.bintray.com/arrow-kt/arrow-kt/") }
 }
 
 dependencies {
-//    implementation("org.springframework.boot.experimental:spring-boot-starter-data-r2dbc")
+    implementation("org.springframework.boot.experimental:spring-boot-starter-data-r2dbc")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
@@ -40,7 +41,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8")
     implementation("org.springframework.session:spring-session-core")
     implementation("org.springframework.boot:spring-boot-starter-aop")
-    
+
+    implementation("io.r2dbc:r2dbc-postgresql:0.8.0.RELEASE")
+
     compile ("io.arrow-kt:arrow-core:$arrow_version")
     compile ("io.arrow-kt:arrow-syntax:$arrow_version")
     compile ("io.arrow-kt:arrow-typeclasses:0.9.0")
@@ -75,11 +78,11 @@ dependencies {
     testImplementation("io.projectreactor:reactor-test")
 }
 
-//dependencyManagement {
-//    imports {
-//        mavenBom("org.springframework.boot.experimental:spring-boot-bom-r2dbc:0.1.0.M2")
-//    }
-//}
+dependencyManagement {
+    imports {
+        mavenBom("org.springframework.boot.experimental:spring-boot-bom-r2dbc:0.1.0.M2")
+    }
+}
 
 tasks.withType<Test> {
     useJUnitPlatform()

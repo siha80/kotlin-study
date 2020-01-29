@@ -1,7 +1,6 @@
 package com.siha80.kotlin.study.helloworld.service
 
 import com.siha80.kotlin.study.annotation.AopLogging
-import kotlinx.coroutines.delay
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Mono
 import java.time.Duration
